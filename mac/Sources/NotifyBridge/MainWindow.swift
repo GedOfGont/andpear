@@ -12,7 +12,7 @@ final class MainWindow: NSObject, NSWindowDelegate {
                 contentRect: NSRect(x: 0, y: 0, width: 860, height: 580),
                 styleMask: [.titled, .closable, .miniaturizable, .resizable],
                 backing: .buffered, defer: false)
-            w.title = "NotifyBridge"
+            w.title = "AndPear"
             w.contentViewController = NSHostingController(rootView: MainView())
             w.isReleasedWhenClosed = false
             w.delegate = self

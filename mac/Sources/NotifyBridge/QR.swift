@@ -4,7 +4,7 @@ import CoreImage.CIFilterBuiltins
 /// Pairing QR: notifybridge://pair?key=<base64, url-encoded>
 enum QR {
     static func pairingImage() -> NSImage? {
-        let key = Pairing.keyString
+        let key = Pairing.previewKey ?? Pairing.keyString
         let encoded = key.addingPercentEncoding(withAllowedCharacters: .alphanumerics) ?? key
         let filter = CIFilter.qrCodeGenerator()
         filter.message = Data("notifybridge://pair?key=\(encoded)".utf8)

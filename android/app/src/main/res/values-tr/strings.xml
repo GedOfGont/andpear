@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">NotifyBridge</string>
+    <string name="app_name">AndPear</string>
     <string name="setup_title">Kurulum</string>
     <string name="step_access_title">Bildirim erişimi</string>
-    <string name="step_access_done">NotifyBridge bildirimleri okuyabiliyor</string>
+    <string name="step_access_done">AndPear bildirimleri okuyabiliyor</string>
     <string name="step_access_todo">Bildirimleri Mac\'e iletebilmek için gerekli</string>
     <string name="action_open">Aç</string>
     <string name="step_battery_title">Pil kısıtlaması</string>
@@ -11,7 +11,7 @@
     <string name="action_remove">Kaldır</string>
     <string name="step_pair_title">Mac ile eşleştirme</string>
     <string name="step_pair_done">Bu telefon Mac ile eşleşti</string>
-    <string name="step_pair_todo">Mac\'te NotifyBridge’i aç ve QR kodu okut</string>
+    <string name="step_pair_todo">Mac\'te AndPear’i aç ve QR kodu okut</string>
     <string name="action_scan">QR oku</string>
     <string name="action_renew">Yenile</string>
     <string name="status_paired_ok">Eşleşti ✓</string>

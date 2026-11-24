@@ -19,6 +19,9 @@ enum Pairing {
         return d
     }
 
+    /// Only set by the --render dev mode so screenshots never show the real key.
+    static var previewKey: String?
+
     static var keyString: String { keyData.base64EncodedString() }
 
     static func encrypt(_ data: Data) -> Data? {

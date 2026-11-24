@@ -1,13 +1,13 @@
 /* Keys are the Turkish source strings. */
 "Bildirim izni" = "Notification permission";
 "macOS bildirimleri gösterebilir" = "macOS can show notifications";
-"macOS’ta NotifyBridge bildirimleri kapalı" = "NotifyBridge notifications are turned off in macOS";
+"macOS’ta AndPear bildirimleri kapalı" = "AndPear notifications are turned off in macOS";
 "Sistem Ayarları’nı aç" = "Open System Settings";
 "İzin henüz verilmedi" = "Permission has not been granted yet";
 "İzin ver" = "Allow";
 "Telefon bağlantısı" = "Phone connection";
 "%@bağlı" = "%@connected";
-"Telefon bağlı değil. Telefonda NotifyBridge’in açık ve aynı Wi-Fi ağında olduğundan emin ol." = "The phone is not connected. Make sure NotifyBridge is open on the phone and both devices are on the same Wi-Fi network.";
+"Telefon bağlı değil. Telefonda AndPear’in açık ve aynı Wi-Fi ağında olduğundan emin ol." = "The phone is not connected. Make sure AndPear is open on the phone and both devices are on the same Wi-Fi network.";
 "Son görülme: %@." = "Last seen: %@.";
 "Mac ağı" = "Mac network";
 "Mac’in internet/ağ bağlantısı yok" = "This Mac has no network connection";
@@ -30,13 +30,13 @@
 "%d uyarı var" = "%d warning(s)";
 "Her şey yolunda" = "Everything looks good";
 "Raporu kopyala" = "Copy report";
-"NotifyBridge’e hoş geldin" = "Welcome to NotifyBridge";
+"AndPear’e hoş geldin" = "Welcome to AndPear";
 "Telefonundaki bildirimleri Mac’inde gör, yanıtla ve yönet. Kurulum yaklaşık bir dakika sürer." = "See, reply to and manage your phone’s notifications on your Mac. Setup takes about a minute.";
 "Başla" = "Get started";
 "Bildirimlere izin ver" = "Allow notifications";
 "Telefondan gelen bildirimlerin Mac’te görünmesi için macOS’tan izin gerekir." = "macOS needs your permission to show notifications from your phone on the Mac.";
 "Telefonu eşleştir" = "Pair your phone";
-"Telefonda NotifyBridge’i aç" = "Open NotifyBridge on your phone";
+"Telefonda AndPear’i aç" = "Open AndPear on your phone";
 "Kurulum bölümünde “QR oku”ya bas" = "In the Setup section tap “Scan QR”";
 "Bu kodu telefona okut" = "Scan this code with the phone";
 "Telefon bağlı" = "Phone connected";
@@ -48,7 +48,7 @@
 "Bitir" = "Finish";
 "İzin verildi" = "Allowed";
 "Devam" = "Continue";
-"Bildirimler macOS’ta kapalı. Sistem Ayarları’ndan NotifyBridge için açman gerekiyor." = "Notifications are turned off in macOS. Turn them on for NotifyBridge in System Settings.";
+"Bildirimler macOS’ta kapalı. Sistem Ayarları’ndan AndPear için açman gerekiyor." = "Notifications are turned off in macOS. Turn them on for AndPear in System Settings.";
 "Sonra" = "Later";
 "Atla" = "Skip";
 "Eşleşme sıfırlansın mı?" = "Reset pairing?";
@@ -86,13 +86,13 @@
 "Şifre yöneticilerinin kopyaladığı gizli içerikler gönderilmez. Telefonda “Mac’ten gelen panoyu al” da açık olmalı. Telefondan Mac’e göndermek için telefondaki Paylaş menüsünü ya da uygulamadaki düğmeyi kullan." = "Secrets copied by password managers are never sent. “Receive clipboard from Mac” must also be on in the phone app. To send from the phone to the Mac, use the Share menu or the button in the app.";
 "Geçmişi her yerden aç (⌃⌥N)" = "Open history from anywhere (⌃⌥N)";
 "Kısayol" = "Shortcut";
-"Control + Option + N tuşlarına birlikte basınca NotifyBridge geçmişi açılır. Başka bir uygulamayla çakışırsa kapatabilirsin." = "Pressing Control + Option + N together opens the NotifyBridge history. Turn it off if it conflicts with another app.";
+"Control + Option + N tuşlarına birlikte basınca AndPear geçmişi açılır. Başka bir uygulamayla çakışırsa kapatabilirsin." = "Pressing Control + Option + N together opens the AndPear history. Turn it off if it conflicts with another app.";
 "Kurulum" = "Setup";
 "Kurulum sihirbazını yeniden aç" = "Run the setup guide again";
 "Genel" = "General";
 "Oturum açılınca başlat" = "Start at login";
-"NotifyBridge’i Gizle" = "Hide NotifyBridge";
-"NotifyBridge’den Çık" = "Quit NotifyBridge";
+"AndPear’i Gizle" = "Hide AndPear";
+"AndPear’den Çık" = "Quit AndPear";
 "Düzen" = "Edit";
 "Kes" = "Cut";
 "Kopyala" = "Copy";
@@ -101,7 +101,7 @@
 "Pencere" = "Window";
 "Kapat" = "Close";
 "Küçült" = "Minimize";
-"NotifyBridge’i aç…" = "Open NotifyBridge…";
+"AndPear’i aç…" = "Open AndPear…";
 "Geçmişi aç" = "Open history";
 "Duraklat" = "Pause";
 "2 saat" = "2 hours";

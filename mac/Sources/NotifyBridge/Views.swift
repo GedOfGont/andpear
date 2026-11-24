@@ -112,7 +112,7 @@ struct GeneralView: View {
                         .background(RoundedRectangle(cornerRadius: 12).fill(Color.white))
 
                         VStack(alignment: .leading, spacing: 10) {
-                            step(1, L("Telefonda NotifyBridge’i aç"))
+                            step(1, L("Telefonda AndPear’i aç"))
                             step(2, L("Kurulum bölümünde “QR oku”ya bas"))
                             step(3, L("Bu kodu telefona okut"))
                             Spacer(minLength: 6)
@@ -192,7 +192,7 @@ struct GeneralView: View {
         VStack(alignment: .leading, spacing: 8) {
             HStack(spacing: 8) {
                 Circle().fill(Color.white.opacity(model.connected ? 1 : 0.5)).frame(width: 10, height: 10)
-                Text("NotifyBridge").font(.subheadline.weight(.medium)).opacity(0.9)
+                Text("AndPear").font(.subheadline.weight(.medium)).opacity(0.9)
             }
             Text(model.connected ? L("Telefon bağlı") : L("Telefon bekleniyor"))
                 .font(.system(size: 32, weight: .bold, design: .rounded))
@@ -325,7 +325,7 @@ private struct HistoryRow: View {
     @ViewBuilder private var icon: some View {
         if let pkg = entry.pkg, let b64 = model.icons[pkg], let img = IconCache.image(b64) {
             Image(nsImage: img).resizable().frame(width: 38, height: 38).clipShape(RoundedRectangle(cornerRadius: 9))
-        } else if entry.app == "NotifyBridge" {
+        } else if entry.app == "NotifyBridge" || entry.app == "AndPear" {
             // test notifications come from the app itself
             Image(nsImage: NSApp.applicationIconImage).resizable().frame(width: 38, height: 38)
         } else {
@@ -367,7 +367,7 @@ struct SettingsView: View {
             } header: {
                 Text(L("Kısayol"))
             } footer: {
-                Text(L("Control + Option + N tuşlarına birlikte basınca NotifyBridge geçmişi açılır. Başka bir uygulamayla çakışırsa kapatabilirsin."))
+                Text(L("Control + Option + N tuşlarına birlikte basınca AndPear geçmişi açılır. Başka bir uygulamayla çakışırsa kapatabilirsin."))
             }
             Section(L("Kurulum")) {
                 Button(L("Kurulum sihirbazını yeniden aç")) { model.onboarded = false }

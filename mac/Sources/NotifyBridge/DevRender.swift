@@ -1,13 +1,15 @@
 import AppKit
 import SwiftUI
 
-/// Developer aid: `NotifyBridge --render <dir>` draws the real tabs with sample data to PNG files and exits.
+/// Developer aid: `AndPear --render <dir>` draws the real tabs with sample data to PNG files and exits.
 /// Lets the UI be checked without screen-recording permission.
 enum DevRender {
     @MainActor static func run(dir: String) {
         let model = AppModel.shared
         model.connected = true
         model.deviceName = "Pixel 9"
+        Pairing.previewKey = Data(repeating: 7, count: 32).base64EncodedString() // never show the real key in renders
+        model.pairingKey = Pairing.previewKey ?? ""
         model.battery = 51
         model.charging = true
         model.history = [

@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">NotifyBridge</string>
+    <string name="app_name">AndPear</string>
     <string name="setup_title">Setup</string>
     <string name="step_access_title">Notification access</string>
-    <string name="step_access_done">NotifyBridge can read notifications</string>
+    <string name="step_access_done">AndPear can read notifications</string>
     <string name="step_access_todo">Needed to forward notifications to your Mac</string>
     <string name="action_open">Open</string>
     <string name="step_battery_title">Battery restriction</string>
@@ -11,7 +11,7 @@
     <string name="action_remove">Remove</string>
     <string name="step_pair_title">Pair with Mac</string>
     <string name="step_pair_done">This phone is paired with the Mac</string>
-    <string name="step_pair_todo">Open NotifyBridge on the Mac and scan the QR code</string>
+    <string name="step_pair_todo">Open AndPear on the Mac and scan the QR code</string>
     <string name="action_scan">Scan QR</string>
     <string name="action_renew">Renew</string>
     <string name="status_paired_ok">Paired ✓</string>

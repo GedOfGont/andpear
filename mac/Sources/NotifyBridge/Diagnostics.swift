@@ -24,7 +24,7 @@ struct DiagnosticsView: View {
         case .authorized, .provisional, .ephemeral:
             list.append(Item(title: L("Bildirim izni"), detail: L("macOS bildirimleri gösterebilir"), level: .ok))
         case .denied:
-            list.append(Item(title: L("Bildirim izni"), detail: L("macOS’ta NotifyBridge bildirimleri kapalı"),
+            list.append(Item(title: L("Bildirim izni"), detail: L("macOS’ta AndPear bildirimleri kapalı"),
                              level: .bad, action: (L("Sistem Ayarları’nı aç"), { AppDelegate.shared.openNotificationSettings() })))
         default:
             list.append(Item(title: L("Bildirim izni"), detail: L("İzin henüz verilmedi"),
@@ -35,7 +35,7 @@ struct DiagnosticsView: View {
             let name = model.deviceName.isEmpty ? "" : "\(model.deviceName) · "
             list.append(Item(title: L("Telefon bağlantısı"), detail: String(format: L("%@bağlı"), name), level: .ok))
         } else {
-            var detail = L("Telefon bağlı değil. Telefonda NotifyBridge’in açık ve aynı Wi-Fi ağında olduğundan emin ol.")
+            var detail = L("Telefon bağlı değil. Telefonda AndPear’in açık ve aynı Wi-Fi ağında olduğundan emin ol.")
             if let seen = model.lastPhoneSeen {
                 detail += " " + String(format: L("Son görülme: %@."), Self.ago(seen))
             }
@@ -140,7 +140,7 @@ struct DiagnosticsView: View {
     }
 
     private func copyReport() {
-        var lines = ["NotifyBridge diagnostics", "version: \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] ?? "?")",
+        var lines = ["AndPear diagnostics", "version: \(Bundle.main.infoDictionary?["CFBundleShortVersionString"] ?? "?")",
                      "macOS: \(ProcessInfo.processInfo.operatingSystemVersionString)"]
         for i in items {
             let tag = i.level == .ok ? "OK  " : (i.level == .warn ? "WARN" : "FAIL")

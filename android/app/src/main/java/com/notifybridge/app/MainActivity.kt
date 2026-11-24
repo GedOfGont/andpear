@@ -155,7 +155,7 @@ class MainActivity : ComponentActivity() {
                 NavRow(getString(R.string.nav_apps_title), getString(R.string.nav_apps_sub), onClick = onApps)
                 HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
                 NavRow(getString(R.string.nav_test_title), getString(R.string.nav_test_sub)) {
-                    Sender.send(ctx, "NotifyBridge", getString(R.string.test_title), getString(R.string.test_body))
+                    Sender.send(ctx, "AndPear", getString(R.string.test_title), getString(R.string.test_body))
                     status = getString(R.string.status_sending)
                 }
                 HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
@@ -217,7 +217,7 @@ class MainActivity : ComponentActivity() {
             Modifier.fillMaxWidth().clip(RoundedCornerShape(28.dp)).background(Brand.Gradient).padding(22.dp),
             verticalArrangement = Arrangement.spacedBy(6.dp),
         ) {
-            Text("NotifyBridge", color = androidx.compose.ui.graphics.Color.White.copy(alpha = 0.85f), fontSize = 14.sp, fontWeight = FontWeight.Medium)
+            Text("AndPear", color = androidx.compose.ui.graphics.Color.White.copy(alpha = 0.85f), fontSize = 14.sp, fontWeight = FontWeight.Medium)
             Text(
                 if (ready) getString(R.string.hero_ready) else getString(R.string.hero_setup_needed),
                 color = androidx.compose.ui.graphics.Color.White, fontSize = 34.sp, fontWeight = FontWeight.Bold,

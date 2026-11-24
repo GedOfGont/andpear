@@ -2,10 +2,10 @@
 set -e
 cd "$(dirname "$0")"
 swift build -c release
-APP=build/NotifyBridge.app
+APP=build/AndPear.app
 rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS"
-cp .build/release/NotifyBridge "$APP/Contents/MacOS/NotifyBridge"
+cp .build/release/NotifyBridge "$APP/Contents/MacOS/AndPear"
 mkdir -p "$APP/Contents/Resources"
 # compile the icon catalog so macOS (notifications, Settings) finds the icon by CFBundleIconName
 ICONOUT=$(mktemp -d)
@@ -21,13 +21,14 @@ cat > "$APP/Contents/Info.plist" <<PL
 <key>CFBundleDevelopmentRegion</key><string>en</string>
 <key>CFBundleLocalizations</key><array><string>en</string><string>tr</string></array>
 <key>CFBundleIdentifier</key><string>com.notifybridge.desktop</string>
-<key>CFBundleName</key><string>NotifyBridge</string>
+<key>CFBundleName</key><string>AndPear</string>
+<key>CFBundleDisplayName</key><string>AndPear</string>
 <key>CFBundleIconFile</key><string>AppIcon</string>
 <key>CFBundleIconName</key><string>AppIcon</string>
-<key>CFBundleExecutable</key><string>NotifyBridge</string>
+<key>CFBundleExecutable</key><string>AndPear</string>
 <key>CFBundlePackageType</key><string>APPL</string>
-<key>CFBundleShortVersionString</key><string>0.1.0</string>
-<key>CFBundleVersion</key><string>1</string>
+<key>CFBundleShortVersionString</key><string>0.1.1</string>
+<key>CFBundleVersion</key><string>2</string>
 <key>LSMinimumSystemVersion</key><string>13.0</string>
 <key>LSUIElement</key><true/>
 <key>NSLocalNetworkUsageDescription</key><string>Local network access is needed to receive notifications from your phone.</string>

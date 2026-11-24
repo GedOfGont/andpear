@@ -86,9 +86,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
         let main = NSMenu()
         let appItem = NSMenuItem(); main.addItem(appItem)
         let appMenu = NSMenu(); appItem.submenu = appMenu
-        appMenu.addItem(withTitle: L("NotifyBridge’i Gizle"), action: #selector(NSApplication.hide(_:)), keyEquivalent: "h")
+        appMenu.addItem(withTitle: L("AndPear’i Gizle"), action: #selector(NSApplication.hide(_:)), keyEquivalent: "h")
         appMenu.addItem(.separator())
-        appMenu.addItem(withTitle: L("NotifyBridge’den Çık"), action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
+        appMenu.addItem(withTitle: L("AndPear’den Çık"), action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q")
 
         let editItem = NSMenuItem(); main.addItem(editItem)
         let edit = NSMenu(title: L("Düzen")); editItem.submenu = edit
@@ -107,14 +107,14 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
     private func setupStatusItem() {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         let cfg = NSImage.SymbolConfiguration(pointSize: 15, weight: .semibold)
-        let icon = NSImage(systemSymbolName: "bell.badge.fill", accessibilityDescription: "NotifyBridge")?.withSymbolConfiguration(cfg)
+        let icon = NSImage(systemSymbolName: "bell.badge.fill", accessibilityDescription: "AndPear")?.withSymbolConfiguration(cfg)
         icon?.isTemplate = true   // follows light/dark menu bar automatically
         statusItem.button?.image = icon
 
         let menu = NSMenu()
         menu.addItem(statusLine)
         menu.addItem(.separator())
-        menu.addItem(menuItem(L("NotifyBridge’i aç…"), #selector(openWindow), "o"))
+        menu.addItem(menuItem(L("AndPear’i aç…"), #selector(openWindow), "o"))
         historyItem.title = L("Geçmişi aç")
         historyItem.action = #selector(openHistory)
         historyItem.target = self
@@ -251,7 +251,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
     private func updateIcon() {
         let cfg = NSImage.SymbolConfiguration(pointSize: 15, weight: .semibold)
         let name = model.isPaused ? "bell.slash.fill" : "bell.badge.fill"
-        let icon = NSImage(systemSymbolName: name, accessibilityDescription: "NotifyBridge")?.withSymbolConfiguration(cfg)
+        let icon = NSImage(systemSymbolName: name, accessibilityDescription: "AndPear")?.withSymbolConfiguration(cfg)
         icon?.isTemplate = true
         statusItem.button?.image = icon
     }
@@ -327,7 +327,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
     @objc func openWindow() { MainWindow.shared.show() }
 
     @objc func sendTest() {
-        show(id: UUID().uuidString, title: "NotifyBridge", app: L("Test"), body: L("Test bildirimi çalışıyor"), pkg: nil, iconB64: nil)
+        show(id: UUID().uuidString, title: "AndPear", app: L("Test"), body: L("Test bildirimi çalışıyor"), pkg: nil, iconB64: nil)
     }
 
     @objc func toggleFind() {
@@ -430,7 +430,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate, UNUserNotificationCent
             guard let text = m.text, !text.isEmpty else { return }
             copyText(text)
             let preview = text.count > 80 ? String(text.prefix(80)) + "…" : text
-            if !model.isPaused { show(id: UUID().uuidString, title: L("Pano telefondan alındı"), app: "NotifyBridge", body: preview, pkg: nil, iconB64: nil) }
+            if !model.isPaused { show(id: UUID().uuidString, title: L("Pano telefondan alındı"), app: "AndPear", body: preview, pkg: nil, iconB64: nil) }
         default:
             let id = m.id ?? UUID().uuidString
             let title = m.title ?? "", app = m.app ?? "", body = m.text ?? ""

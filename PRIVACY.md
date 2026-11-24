@@ -1,8 +1,8 @@
-# NotifyBridge Privacy Policy
+# AndPear Privacy Policy
 
 _Last updated: 2026-11-24_
 
-NotifyBridge forwards notifications from your Android phone to your own Mac. This policy explains what the app does with your data.
+AndPear forwards notifications from your Android phone to your own Mac. This policy explains what the app does with your data.
 
 ## What the app accesses
 - **Notifications (Notification Access permission).** The app reads the notifications posted on your phone (app name, title, text, app icon) so it can show them on your Mac. You choose which apps are forwarded.
@@ -13,7 +13,7 @@ NotifyBridge forwards notifications from your Android phone to your own Mac. Thi
 ## Where the data goes
 Data is sent **directly from your phone to your Mac** over your local network. Everything is encrypted end to end with a 256-bit key (AES-256-GCM) created when you pair the two devices by QR code. The key stays on your devices.
 
-NotifyBridge has **no servers that receive your data**, no accounts, no analytics, no advertising and no third-party trackers. We cannot see your notifications.
+AndPear has **no servers that receive your data**, no accounts, no analytics, no advertising and no third-party trackers. We cannot see your notifications.
 
 ## What is stored
 - On the phone: your settings, the paired key, and a short queue (up to 50 items, up to 24 hours) of notifications that could not be delivered while your Mac was unreachable. The queue is deleted once delivered or expired.
@@ -29,4 +29,4 @@ You can revoke Notification Access in Android settings at any time, remove apps 
 The app is not directed at children.
 
 ## Contact
-Questions: open an issue at https://github.com/GedOfGont/notifybridge/issues
+Questions: open an issue at https://github.com/GedOfGont/andpear/issues

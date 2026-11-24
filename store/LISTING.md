@@ -1,15 +1,15 @@
 # Play Store listing
 
 ## Title (30 max)
-EN: NotifyBridge – Phone to Mac
-TR: NotifyBridge – Telefondan Mac'e
+EN: AndPear – Phone to Mac
+TR: AndPear – Telefondan Mac'e
 
 ## Short description (80 max)
 EN: See your Android notifications on your Mac. Private, encrypted, no account.
 TR: Android bildirimlerini Mac'te gör. Özel, şifreli, hesapsız.
 
 ## Full description EN
-NotifyBridge shows your Android phone's notifications on your Mac, so you can stay focused on your work without picking up your phone.
+AndPear shows your Android phone's notifications on your Mac, so you can stay focused on your work without picking up your phone.
 
 • Notifications appear as native macOS banners with the app icon
 • Reply to messages straight from the Mac banner
@@ -25,17 +25,17 @@ Everything goes directly from your phone to your Mac over your own Wi-Fi, encryp
 
 HOW TO SET UP
 1. Install the Mac app: in Terminal run
-   brew install --cask GedOfGont/notifybridge/notifybridge
+   brew install --cask GedOfGont/andpear/andpear
 2. Open it on your Mac and follow the setup guide.
 3. Open this app on your phone, scan the QR code and allow notification access.
 
 Requires macOS 13 or later and both devices on the same Wi-Fi network.
 
 NOTIFICATION ACCESS DISCLOSURE
-NotifyBridge uses Android's Notification Access permission only to read notifications and forward them to your own paired Mac. Data is never sent to our servers or any third party.
+AndPear uses Android's Notification Access permission only to read notifications and forward them to your own paired Mac. Data is never sent to our servers or any third party.
 
 ## Full description TR
-NotifyBridge, Android telefonunun bildirimlerini Mac'inde gösterir; telefona uzanmadan işine odaklanabilirsin.
+AndPear, Android telefonunun bildirimlerini Mac'inde gösterir; telefona uzanmadan işine odaklanabilirsin.
 
 • Bildirimler uygulama ikonuyla yerel macOS bildirimi olarak gelir
 • Mesajlara doğrudan Mac bildiriminden yanıt ver
@@ -51,7 +51,7 @@ Her şey telefondan doğrudan Mac'e, kendi Wi-Fi ağın üzerinden, uçtan uca �
 
 KURULUM
 1. Mac uygulamasını kur: Terminal'de
-   brew install --cask GedOfGont/notifybridge/notifybridge
+   brew install --cask GedOfGont/andpear/andpear
 2. Mac'te uygulamayı aç ve kurulum rehberini izle.
 3. Telefonda bu uygulamayı aç, QR kodu tara ve bildirim erişimine izin ver.
 
@@ -63,4 +63,4 @@ macOS 13 veya üstü gerekir; iki cihaz aynı Wi-Fi ağında olmalı.
 - Ads: none. Account required: no. Target audience: 18+ (not for children).
 - AI-generated assets: the app icon was created with an AI image generator.
 - Category: Tools. Contact email: (your public developer email)
-- Privacy policy URL: https://github.com/GedOfGont/notifybridge/blob/main/PRIVACY.md  (publish repo first)
+- Privacy policy URL: https://github.com/GedOfGont/andpear/blob/main/PRIVACY.md  (publish repo first)

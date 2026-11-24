@@ -1,4 +1,4 @@
-# NotifyBridge
+# AndPear
 
 See your Android notifications on your Mac. Private, end-to-end encrypted, no account, no cloud.
 
@@ -12,14 +12,16 @@ See your Android notifications on your Mac. Private, end-to-end encrypted, no ac
 **Mac** (macOS 13+):
 
 ```
-brew install --cask GedOfGont/notifybridge/notifybridge
+brew install --cask GedOfGont/andpear/andpear
 ```
 
-**Android**: install NotifyBridge from Google Play (link coming soon), open it, scan the QR code shown by the Mac app and allow notification access. Both devices must be on the same Wi-Fi network.
+**Android**: install AndPear from Google Play (link coming soon), open it, scan the QR code shown by the Mac app and allow notification access. Both devices must be on the same Wi-Fi network.
 
 ## How it works
 
 The phone finds the Mac through Bonjour (`_notifybridge._tcp`) and sends length-prefixed frames over TCP. Each frame is encrypted with AES-256-GCM using a 256-bit key that is created on the Mac and handed to the phone through the pairing QR code. There is no server; see [PRIVACY.md](PRIVACY.md).
+
+The project was previously called NotifyBridge; the Android package (`com.notifybridge.app`), the macOS bundle id and the Bonjour service name keep the old name for compatibility.
 
 ## Build
 

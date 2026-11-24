@@ -260,7 +260,7 @@ object Sender {
                 val text = json.optString("text")
                 if (text.isNotEmpty()) Handler(Looper.getMainLooper()).post {
                     (ctx.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager)
-                        .setPrimaryClip(ClipData.newPlainText("NotifyBridge", text))
+                        .setPrimaryClip(ClipData.newPlainText("AndPear", text))
                 }
             }
             "find" -> FindPhone.start(ctx)

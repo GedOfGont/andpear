@@ -35,7 +35,7 @@ struct OnboardingView: View {
     @ViewBuilder private var content: some View {
         switch step {
         case 0:
-            page(L("NotifyBridge’e hoş geldin"),
+            page(L("AndPear’e hoş geldin"),
                  L("Telefonundaki bildirimleri Mac’inde gör, yanıtla ve yönet. Kurulum yaklaşık bir dakika sürer.")) {
                 Button { withAnimation { step = 1 } } label: { Label(L("Başla"), systemImage: "arrow.right") }
                     .buttonStyle(PillButtonStyle(kind: .primary))
@@ -57,7 +57,7 @@ struct OnboardingView: View {
                         .frame(width: 150, height: 150).padding(10)
                         .background(RoundedRectangle(cornerRadius: 12).fill(Color.white))
                         VStack(alignment: .leading, spacing: 10) {
-                            numbered(1, L("Telefonda NotifyBridge’i aç"))
+                            numbered(1, L("Telefonda AndPear’i aç"))
                             numbered(2, L("Kurulum bölümünde “QR oku”ya bas"))
                             numbered(3, L("Bu kodu telefona okut"))
                         }
@@ -95,7 +95,7 @@ struct OnboardingView: View {
             }
         case .denied:
             VStack(spacing: 14) {
-                Text(L("Bildirimler macOS’ta kapalı. Sistem Ayarları’ndan NotifyBridge için açman gerekiyor."))
+                Text(L("Bildirimler macOS’ta kapalı. Sistem Ayarları’ndan AndPear için açman gerekiyor."))
                     .multilineTextAlignment(.center).foregroundStyle(.secondary)
                 HStack(spacing: 10) {
                     Button { AppDelegate.shared.openNotificationSettings() } label: { Label(L("Sistem Ayarları’nı aç"), systemImage: "gearshape") }
